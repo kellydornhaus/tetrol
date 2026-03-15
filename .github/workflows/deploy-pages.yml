@@ -1,0 +1,48 @@
+name: Deploy Web Build
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.x'
+
+      - name: Build Web Bundle
+        run: ./scripts/build-web.sh
+
+      - name: Add .nojekyll
+        run: touch build/web/.nojekyll
+
+      - name: Add 404 fallback
+        run: cp build/web/index.html build/web/404.html
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
