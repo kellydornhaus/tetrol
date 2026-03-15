@@ -1,0 +1,10 @@
+<?xml-stylesheet href="viewport_column.css" type="text/css"?>
+<VStack id="viewport" width="100vw" class="viewport-root" align-h="center">
+  <VStack id="column" class="viewport-column">
+    <Panel id="safe" class="slice safe" text="Safe Area" align-h="center" align-v="center" />
+    <Panel id="toolbar" class="slice toolbar" text="Toolbar" align-h="center" align-v="center" />
+    <Panel id="game" class="slice game" text="Game Area" align-h="center" align-v="center" />
+    <Panel id="input" class="slice input" text="Input Area" align-h="center" align-v="center" />
+    <Panel id="keyboard" class="slice keyboard" text="Onscreen Keyboard" align-h="center" align-v="center" />
+  </VStack>
+</VStack>

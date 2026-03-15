@@ -1,0 +1,36 @@
+<?xml-stylesheet href="scoreboard_demo.css" type="text/css"?>
+<VStack id="score-root"
+        class="scoreboard">
+  <Panel class="scorebar">
+    <VStack spacing="14dp">
+      <Panel class="score-title" text="{{Venue}}"/>
+      <HStack class="score-main" justify="spaceBetween" align-v="center" fill-width="true">
+        <Panel id="home-card" class="team-card" fill-width="false">
+          <VStack spacing="4dp">
+            <Panel class="team-name" text="{{HomeTeam}}"/>
+            <Panel class="team-record" text="{{HomeRecord}}"/>
+          </VStack>
+        </Panel>
+        <Panel class="score-value" text="{{HomeScore}}"/>
+        <Panel class="score-divider" text=":"/>
+        <Panel class="score-value" text="{{AwayScore}}"/>
+        <Panel id="away-card" class="team-card" fill-width="false">
+          <VStack spacing="4dp">
+            <Panel class="team-name" text="{{AwayTeam}}"/>
+            <Panel class="team-record" text="{{AwayRecord}}"/>
+          </VStack>
+        </Panel>
+      </HStack>
+      <HStack class="meta-row" justify="spaceBetween" fill-width="true">
+        <Panel class="meta" text="Q{{Quarter}}"/>
+        <Panel class="meta" text="{{Clock}}"/>
+        <Panel class="meta" text="{{DownDistance}}"/>
+      </HStack>
+    </VStack>
+  </Panel>
+
+  <Panel class="play-header" text="Latest Play"/>
+  <Panel class="play-detail">{{Play}}</Panel>
+
+  <Panel class="team-card possession" visibility="collapse"/>
+</VStack>

@@ -1,0 +1,61 @@
+.viewport-root {
+  background-color: rgba(12, 14, 28, 1);
+  fill-height: true;
+  fill-width: true;
+  padding: 0;
+}
+
+.viewport-column {
+  padding: 0;
+  background-color: rgba(20, 24, 40, 1);
+  border-color: rgba(70, 74, 112, 1);
+  border-width: 3dp;
+  align-h: center;
+  fill-height: true;
+  spacing: 0;
+  min-width: calc(100vh - 150dp)/1.4375;
+  max-width: calc(100vh - 150dp)/1.4375;
+}
+
+.slice {
+  padding: 14dp;
+  fill-width: true;
+  font-size: 20dp;
+  color: rgba(240, 242, 246, 1);
+  border-width: 2dp;
+}
+
+.slice.safe {
+  background-color: rgba(38, 71, 116, 1);
+  border-color: rgba(58, 101, 152, 1);
+  min-height: 50dp;
+  max-height: 50dp;
+}
+
+.slice.toolbar {
+  background-color: rgba(63, 50, 105, 1);
+  border-color: rgba(96, 76, 158, 1);
+  min-height: 50dp;
+  max-height: 50dp;
+}
+
+.slice.game {
+  background-color: rgba(92, 59, 122, 1);
+  border-color: rgba(140, 90, 178, 1);
+  min-height: calc(100vh - 150dp)/1.4375;
+  max-height: calc(100vh - 150dp)/1.4375;
+}
+
+.slice.input {
+  background-color: rgba(54, 97, 82, 1);
+  border-color: rgba(86, 140, 118, 1);
+  min-height: 50dp;
+  max-height: 50dp;
+}
+
+.slice.keyboard {
+  background-color: rgba(109, 84, 53, 1);
+  border-color: rgba(156, 121, 78, 1);
+  min-height: calc(100vh - 150dp)/1.4375 * 0.4375;
+  max-height: calc(100vh - 150dp)/1.4375 * 0.4375;
+}

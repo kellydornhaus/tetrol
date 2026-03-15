@@ -1,0 +1,128 @@
+<?xml-stylesheet href="demo.css" type="text/css"?>
+<VStack id="root" width="100vw" class="page">
+  <Panel padding="12">
+    <VStack>
+      <Panel id="title" class="title">XML Demo</Panel>
+      <HStack id="row1" class="row space-between">
+        <Panel>Left</Panel>
+        <Spacer weight="1"/>
+        <Panel>Right</Panel>
+      </HStack>
+      <Panel class="panel">
+        <Panel id="para" class="para">
+          This layout was built from XML using a registry that supports custom tags. The paragraph wraps to the specified width.
+        </Panel>
+      </Panel>
+      <BG class="banner">
+        <Panel padding="8">
+          <Panel class="banner-text">Custom BG element</Panel>
+        </Panel>
+      </BG>
+      <Panel class="outline" padding="6">
+        <Panel class="outline-text">Outlined area</Panel>
+      </Panel>
+      <Particles class="sparkle" width="260dp" height="160dp" rate="160" radius="3dp" color="#74d4ff" />
+      <Panel class="hero-card">
+        <VStack class="hero-card-stack">
+          <Image src="assets/images/illustration.png" fit="contain" align-h="center" align-v="center" style="max-width: 220dp; max-height: 180dp;" />
+          <Panel class="hero-card-text">
+            Background image uses a 9-slice so the corners stay crisp, even when this card stretches.
+          </Panel>
+        </VStack>
+      </Panel>
+    </VStack>
+  </Panel>
+  <BG class="section fonts-section">
+    <Panel padding="12">
+      <VStack>
+        <Panel class="section-title" align-h="start">Font Showcase</Panel>
+        <Panel class="font-section-subtitle">
+          Use the font attribute to swap faces registered with the text engine. These cards demonstrate the built-in options.
+        </Panel>
+        <VStack class="font-list">
+          <Panel class="font-card">
+            <VStack class="font-card-stack">
+              <Panel class="font-card-title">Regular (default)</Panel>
+              <Panel class="font-card-sample" font="regular">
+                The quick brown fox jumps over the lazy dog.
+              </Panel>
+              <Panel class="font-card-meta">font="regular"</Panel>
+            </VStack>
+          </Panel>
+          <Panel class="font-card">
+            <VStack class="font-card-stack">
+              <Panel class="font-card-title">Medium</Panel>
+              <Panel class="font-card-sample" font="medium">
+                The quick brown fox jumps over the lazy dog.
+              </Panel>
+              <Panel class="font-card-meta">font="medium"</Panel>
+            </VStack>
+          </Panel>
+          <Panel class="font-card">
+            <VStack class="font-card-stack">
+              <Panel class="font-card-title">Medium Italic</Panel>
+              <Panel class="font-card-sample" font="medium-italic">
+                The quick brown fox jumps over the lazy dog.
+              </Panel>
+              <Panel class="font-card-meta">font="medium-italic"</Panel>
+            </VStack>
+          </Panel>
+          <Panel class="font-card">
+            <VStack class="font-card-stack">
+              <Panel class="font-card-title">Bold</Panel>
+              <Panel class="font-card-sample" font="bold">
+                The quick brown fox jumps over the lazy dog.
+              </Panel>
+              <Panel class="font-card-meta">font="bold"</Panel>
+            </VStack>
+          </Panel>
+          <Panel class="font-card">
+            <VStack class="font-card-stack">
+              <Panel class="font-card-title">Bold Italic</Panel>
+              <Panel class="font-card-sample" font="bold-italic">
+                The quick brown fox jumps over the lazy dog.
+              </Panel>
+              <Panel class="font-card-meta">font="bold-italic"</Panel>
+            </VStack>
+          </Panel>
+          <Panel class="font-card">
+            <VStack class="font-card-stack">
+              <Panel class="font-card-title">Mono</Panel>
+              <Panel class="font-card-sample" font="mono">
+                The quick brown fox jumps over the lazy dog.
+              </Panel>
+              <Panel class="font-card-meta">font="mono"</Panel>
+            </VStack>
+          </Panel>
+          <Panel class="font-card">
+            <VStack class="font-card-stack">
+              <Panel class="font-card-title">Mono Italic</Panel>
+              <Panel class="font-card-sample" font="mono-italic">
+                The quick brown fox jumps over the lazy dog.
+              </Panel>
+              <Panel class="font-card-meta">font="mono-italic"</Panel>
+            </VStack>
+          </Panel>
+          <Panel class="font-card">
+            <VStack class="font-card-stack">
+              <Panel class="font-card-title">Small Caps</Panel>
+              <Panel class="font-card-sample" font="smallcaps">
+                Small caps keep titles balanced and readable.
+              </Panel>
+              <Panel class="font-card-meta">font="smallcaps"</Panel>
+            </VStack>
+          </Panel>
+          <Panel class="font-card">
+            <VStack class="font-card-stack">
+              <Panel class="font-card-title">Small Caps Italic</Panel>
+              <Panel class="font-card-sample" font="smallcaps-italic">
+                Small caps italic adds motion without shouting.
+              </Panel>
+              <Panel class="font-card-meta">font="smallcaps-italic"</Panel>
+            </VStack>
+          </Panel>
+        </VStack>
+      </VStack>
+    </Panel>
+  </BG>
+</VStack>

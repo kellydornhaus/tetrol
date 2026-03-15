@@ -1,0 +1,7 @@
+.DS_Store
+**/obj/
+**/bin/
+/.cache
+/examples/zoo/.cache
+/examples/.cache
+/build

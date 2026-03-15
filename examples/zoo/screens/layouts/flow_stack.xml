@@ -1,0 +1,27 @@
+<?xml-stylesheet href="flow_stack.css" type="text/css"?>
+<FlowStack id="root" width="100vw" padding="28dp" spacing="20dp" line-spacing="20dp" background="#151228">
+  <Panel id="title" class="title">FlowStack Chip Cloud</Panel>
+  <Panel id="subtitle" class="subtitle" wrap="true">
+    FlowStack automatically wraps children onto new rows while keeping spacing and alignment intact.
+  </Panel>
+  <FlowStack id="chip-cloud" class="chip-cloud" spacing="12dp" line-spacing="12dp">
+    <Panel class="chip accent">Layout</Panel>
+    <Panel class="chip">FlowStack</Panel>
+    <Panel class="chip">Responsive</Panel>
+    <Panel class="chip accent">XML + CSS</Panel>
+    <Panel class="chip">SwiftUI vibes</Panel>
+    <Panel class="chip alt">Dynamic rows</Panel>
+    <Panel class="chip">Wrap-aware</Panel>
+    <Panel class="chip accent">Chip</Panel>
+    <Panel class="chip">Badge</Panel>
+    <Panel class="chip alt">Automation</Panel>
+    <Panel class="chip">Preview</Panel>
+    <Panel class="chip accent">Reflow</Panel>
+    <Panel class="chip">DP units</Panel>
+    <Panel class="chip">Flexibility</Panel>
+    <Panel class="chip alt">Renderer agnostic</Panel>
+  </FlowStack>
+  <Panel id="hint" class="hint" wrap="true">
+    Resize the window to watch the chips flow into new lines and remain centered.
+  </Panel>
+</FlowStack>

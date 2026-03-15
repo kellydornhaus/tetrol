@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layouter Zoo — Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-shell">
+  <header class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Layouter</p>
+      <h1>Layout zoo</h1>
+      <p class="lede">
+        Page through every demo as its own embed. Each card loads the Ebiten + etxt sample with a single screen active, and tabs let you flip between the XML/CSS/Go source and the live view in one place.
+      </p>
+      <div class="hero-actions">
+        <a class="cta" href="https://github.com/kellydornhaus/layouter" target="_blank" rel="noreferrer">View on GitHub</a>
+        <span class="hero-note">Next/Prev swaps demos · copy link to share a screen</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="stat">
+        <span class="stat-label">Screens</span>
+        <span class="stat-value" id="demo-count">0/0</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Mode</span>
+        <span class="stat-value">Single-demo embed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Stack</span>
+        <span class="stat-value">Go · Ebiten · etxt</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="demo-panel">
+      <div class="demo-header">
+        <div>
+          <p class="eyebrow" id="demo-kind">Go Layout</p>
+          <h2 id="demo-title">Loading…</h2>
+        </div>
+        <button class="ghost" id="copy-link" type="button">Copy link</button>
+      </div>
+      <div class="info-card">
+        <div class="tag-row" id="demo-tags"></div>
+        <p class="summary" id="demo-summary">Each example will show up here with a short breakdown.</p>
+      </div>
+      <div class="code-card">
+        <div class="code-header">
+          <div class="code-header-row">
+            <div id="code-tabs" class="tab-row"></div>
+            <div class="demo-controls">
+              <button id="prev-demo" type="button">‹ Prev</button>
+              <div class="demo-meta">
+                <span class="pill" id="demo-index">1/1</span>
+                <span class="pill soft" id="demo-screen-name">—</span>
+              </div>
+              <button id="next-demo" type="button">Next ›</button>
+            </div>
+          </div>
+          <span id="code-path" class="code-path"></span>
+        </div>
+        <div class="code-body">
+          <pre class="code-block" id="code-block-wrap"><code id="code-block">Fetching code…</code></pre>
+          <div class="frame-wrap tab-hidden" id="demo-view">
+            <div class="frame-loader" id="frame-loader">Preparing demo…</div>
+            <iframe id="demo-frame" title="Layouter demo" src="demo.html" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="site.js"></script>
+</body>
+</html>

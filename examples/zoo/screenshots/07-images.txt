@@ -1,0 +1,9 @@
+cold_ms: 3.183 (314.20fps)
+  layout_ms: 2.155
+  render_ms: 1.027
+warm_ms: 1.804 (554.17fps)
+  layout_ms: 1.788
+  render_ms: 0.016
+match: true
+cold_sha256: e2884b8a32bcfeea1c4e1526bea74cba9add84cbe1559c9e57338d473a03b709
+warm_sha256: e2884b8a32bcfeea1c4e1526bea74cba9add84cbe1559c9e57338d473a03b709

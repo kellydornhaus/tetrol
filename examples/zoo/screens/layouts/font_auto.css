@@ -1,0 +1,80 @@
+/* Autosize demo styling */
+
+.auto-demo {
+    spacing: 16dp;
+    padding: 16dp;
+    background: #0f1524;
+}
+
+.banner {
+    padding: 16dp;
+    background: #192238;
+    border-color: #2b3d63;
+    border-width: 2dp;
+    fill-width: true;
+    font-autosize: true;
+    font-autosize-max: 36dp;
+}
+
+.demo-title {
+    fill-width: true;
+    color: #f0f4ff;
+    font-autosize: true;    
+    min-height: 20vh;
+    border-color: #4d7ce0;
+}
+
+.demo-subtitle {
+    color: #c3d7ff;
+    font-size: 12dp;
+    font-autosize: true;
+    font-autosize-max: 22dp;
+}
+
+.section-title {
+    font-size: 14dp;
+    color: #f1f1f1;
+    padding: 6dp;
+    background: #1a243c;
+    border-color: #314675;
+    border-width: 1dp;
+    fill-width: true;
+}
+
+.card-row {
+    fill-width: true;
+    align-v: center;
+}
+
+.card {
+    fill-width: true;
+    padding: 12dp;
+    background: #141f33;
+    border-color: #4d7ce0;
+    border-width: 2dp;
+    color: #f8fbff;
+    font-autosize: true;
+}
+
+.card.small {
+    min-height: 70dp;
+    font-autosize-max: 36dp;
+}
+
+.card.medium {
+    min-height: 110dp;
+    font-autosize-max: 42dp;
+}
+
+.card.large {
+    min-height: 150dp;
+    font-autosize-max: 48dp;
+}
+
+.card.clamp {
+    min-height: 140dp;
+    background: #182943;
+    border-color: #67d4ff;
+    font-autosize-min: 14dp;
+    font-autosize-max: 28dp;
+}

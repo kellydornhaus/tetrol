@@ -1,0 +1,33 @@
+<?xml-stylesheet href="theme_demo.css" type="text/css"?>
+<VStack id="themeRoot" class="theme-page light">
+  <Panel id="themeTitle" class="theme-title" text="XML Theme Toggle" />
+  <Panel class="theme-subtitle">
+    The root's class switches between light and dark every second. Styles update live without rebuilding the tree.
+  </Panel>
+  <HStack class="theme-row">
+    <Panel class="theme-card primary">
+      <Panel class="theme-card-title" text="Primary" />
+      <Panel class="theme-card-body">Contrasting text and background respond to the active theme.</Panel>
+    </Panel>
+    <Panel class="theme-card secondary">
+      <Panel class="theme-card-title" text="Secondary" />
+      <Panel class="theme-card-body">Borders and corner radii are also theme-aware.</Panel>
+    </Panel>
+  </HStack>
+  <Panel class="theme-footer" text="Watch the palette flip every second." />
+  <VStack class="theme-page dark lint-probe" visibility="collapse">
+    <Panel class="theme-title" text="Probe" />
+    <Panel class="theme-subtitle" />
+    <HStack class="theme-row">
+      <Panel class="theme-card primary">
+        <Panel class="theme-card-title" />
+        <Panel class="theme-card-body" />
+      </Panel>
+      <Panel class="theme-card secondary">
+        <Panel class="theme-card-title" />
+        <Panel class="theme-card-body" />
+      </Panel>
+    </HStack>
+    <Panel class="theme-footer" />
+  </VStack>
+</VStack>

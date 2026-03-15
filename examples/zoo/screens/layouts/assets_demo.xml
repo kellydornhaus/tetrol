@@ -1,0 +1,175 @@
+<?xml-stylesheet href="assets_demo.css" type="text/css"?>
+<VStack id="assetsRoot" width="100vw" class="page">
+  <BG class="section">
+    <Panel padding="12">
+      <VStack spacing="10" align-h="center">
+        <Panel class="section-title" align-h="center">UI Asset Gallery</Panel>
+        <Panel class="gallery-subtitle" wrap="true" style="max-width: 520dp;">
+          Sample vector controls rendered via XML. The assets are grouped to keep the demo compact—add more rows in code or XML if you need the full catalog.
+        </Panel>
+      </VStack>
+    </Panel>
+  </BG>
+
+  <BG class="section">
+    <Panel padding="12">
+      <VStack spacing="10">
+        <Panel class="section-title" align-h="start">Navigation Arrows</Panel>
+        <HStack spacing="12dp" justify="start" align-v="center">
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/arrow_basic_e.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Arrow Basic E</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/arrow_basic_n.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Arrow Basic N</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/arrow_basic_s.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Arrow Basic S</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/arrow_basic_w.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Arrow Basic W</Panel>
+          </VStack>
+        </HStack>
+        <HStack spacing="12dp" justify="start" align-v="center">
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/arrow_decorative_e.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Arrow Decorative E</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/arrow_decorative_n.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Arrow Decorative N</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/arrow_decorative_s.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Arrow Decorative S</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/arrow_decorative_w.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Arrow Decorative W</Panel>
+          </VStack>
+        </HStack>
+      </VStack>
+    </Panel>
+  </BG>
+
+  <BG class="section">
+    <Panel padding="12">
+      <VStack spacing="10">
+        <Panel class="section-title" align-h="start">Buttons – Rectangle</Panel>
+        <HStack spacing="12dp" justify="start" align-v="center">
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_rectangle_border.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Rectangle Border</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_rectangle_depth_flat.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Depth Flat</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_rectangle_depth_gloss.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Depth Gloss</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_rectangle_gradient.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Gradient</Panel>
+          </VStack>
+        </HStack>
+      </VStack>
+    </Panel>
+  </BG>
+
+  <BG class="section">
+    <Panel padding="12">
+      <VStack spacing="10">
+        <Panel class="section-title" align-h="start">Buttons – Round</Panel>
+        <HStack spacing="12dp" justify="start" align-v="center">
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_round_border.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Round Border</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_round_flat.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Round Flat</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_round_gradient.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Round Gradient</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_round_line.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Round Line</Panel>
+          </VStack>
+        </HStack>
+      </VStack>
+    </Panel>
+  </BG>
+
+  <BG class="section">
+    <Panel padding="12">
+      <VStack spacing="10">
+        <Panel class="section-title" align-h="start">Buttons – Square</Panel>
+        <HStack spacing="12dp" justify="start" align-v="center">
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_square_border.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Square Border</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_square_flat.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Square Flat</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_square_gradient.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Square Gradient</Panel>
+          </VStack>
+          <VStack spacing="4" align-h="center">
+            <Panel class="thumb">
+              <Image src="assets/images/Vector/Green/button_square_line.svg" fit="contain" align-h="center" align-v="center" style="max-width: 96dp; max-height: 96dp;" />
+            </Panel>
+            <Panel font-size="10" align-h="center" wrap="true" style="max-width: 96dp;">Square Line</Panel>
+          </VStack>
+        </HStack>
+      </VStack>
+    </Panel>
+  </BG>
+</VStack>

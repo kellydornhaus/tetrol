@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="positioning_demo.css" type="text/css"?>
+<ZStack id="root" width="100vw" class="positioning-root">
+  <Panel id="body" class="positioning-body">
+    <VStack id="content" class="positioning-stack">
+      <Panel class="card header-card">
+        <VStack class="header-stack">
+          <Panel class="header-title" text="Positioning Modes"/>
+          <Panel class="header-subtitle" text="Static, relative, absolute, and fixed behaviors can be mixed inside the same layout."/>
+        </VStack>
+      </Panel>
+
+      <Panel class="card">
+        <VStack class="card-stack">
+          <Panel class="mode-badge" text="static"/>
+          <Panel class="card-description" text="Default positioning mode — elements appear where stacks and grids place them."/>
+          <Panel class="demo-static" text="Static content stays in the normal flow."/>
+        </VStack>
+      </Panel>
+
+      <Panel class="card">
+        <VStack class="card-stack">
+          <Panel class="mode-badge" text="relative"/>
+          <Panel class="card-description" text="Offset the element from its laid-out box while leaving the original space intact."/>
+          <ZStack class="relative-demo">
+            <Panel class="relative-base" text="Relative offsets are applied after normal layout. The badge shifts itself without changing siblings."/>
+            <Panel class="relative-badge" text="Relative badge"/>
+          </ZStack>
+        </VStack>
+      </Panel>
+
+      <Panel class="card">
+        <VStack class="card-stack">
+          <Panel class="mode-badge" text="absolute"/>
+          <Panel class="card-description" text="Removed from normal flow and positioned within the first positioning ancestor."/>
+          <ZStack class="absolute-demo">
+            <Panel class="absolute-base" text="Absolute elements ignore flow and pin to their containing block."/>
+            <Panel class="absolute-tag" text="Absolute note"/>
+          </ZStack>
+        </VStack>
+      </Panel>
+
+      <Panel class="card fixed-card">
+        <VStack class="card-stack">
+          <Panel class="mode-badge" text="fixed"/>
+          <Panel class="card-description" text="Anchored to the viewport. Resize or scroll the app to see it stay put."/>
+          <Panel class="fixed-description" text="This card scrolls, but the helper badge in the corner is fixed to the viewport."/>
+        </VStack>
+      </Panel>
+    </VStack>
+  </Panel>
+
+  <Panel id="fixed-helper" class="fixed-helper" text="Fixed helper"/>
+</ZStack>

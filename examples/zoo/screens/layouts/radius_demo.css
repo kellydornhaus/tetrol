@@ -1,0 +1,89 @@
+Panel { font-size: 14dp; }
+VStack { fill-width: true; }
+HStack { fill-width: true; }
+
+.radius-page {
+  background-color: #120f20;
+  padding: 20dp;
+  fill-width: true;
+  spacing: 16dp;
+}
+
+.radius-title {
+  font-size: 22dp;
+  align-h: center;
+  color: #f5f6ff;
+}
+
+.radius-description {
+  padding: 12dp;
+  background-color: #281a36;
+  color: #d7dbff;
+  border-radius: 8dp;
+  wrap: true;
+}
+
+.radius-samples { spacing: 14dp; fill-width: true; }
+
+.radius-card {
+  padding: 14dp;
+  width: 260dp;
+  color: #eae8ff;
+}
+
+.uniform-card {
+  background-color: #352244;
+  border-radius: 16dp;
+}
+
+.per-card {
+  background-color: #2a3650;
+  border-radius: 24dp 24dp 6dp 6dp;
+}
+
+.bordered-card {
+  background-color: #3a2834;
+  border-radius: 12dp;
+  border: 2dp #f8a0ca;
+}
+
+.pill-card {
+  background-color: #242242;
+  border-radius: 14dp;
+}
+
+.sample-title {
+  font-size: 16dp;
+  color: #ffffff;
+}
+
+.sample-body {
+  font-size: 13dp;
+  color: #d7d8ff;
+  wrap: true;
+}
+
+.button-strip { spacing: 10dp; align-v: center; }
+
+.pill-button {
+  padding: 8dp 12dp;
+  border-radius: 999dp;
+  font-size: 13dp;
+  align-h: center;
+}
+
+.pill-button.primary {
+  background-color: #785ad2;
+  color: #ffffff;
+}
+
+.pill-button.secondary {
+  background-color: #3c2c66;
+  color: #dcd4ff;
+}
+
+.pill-button.ghost {
+  background-color: #1e1938;
+  border: 1dp #8b82c9;
+  color: #c5c0ff;
+}

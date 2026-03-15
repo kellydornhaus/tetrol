@@ -1,0 +1,86 @@
+.scoreboard {
+  background: #060b1a;
+  spacing: 24dp;
+  padding: 24dp;
+  fill-width: true;
+  width: 100vw;
+  align-h: center;
+}
+
+.scorebar {
+  background: rgba(18, 25, 46, 0.92);
+  padding: 20dp;
+  corner-radius: 18dp;
+  fill-width: true;
+}
+
+.score-title {
+  font-size: 16dp;
+  color: #b8c4ff;
+  align-h: center;
+}
+
+.score-main {
+  spacing: 18dp;
+}
+
+.team-card {
+  background: rgba(10, 16, 32, 0.88);
+  padding: 12dp;
+  corner-radius: 12dp;
+  min-width: 140dp;
+  align-h: center;
+}
+
+.team-card.possession {
+  border: 2dp rgba(130, 205, 255, 0.9);
+}
+
+.team-name {
+  font-size: 20dp;
+  color: #f4f7ff;
+  align-h: center;
+}
+
+.team-record {
+  font-size: 12dp;
+  color: #8f9abf;
+  align-h: center;
+}
+
+.score-value {
+  font-size: 48dp;
+  color: #fdfcff;
+  min-width: 64dp;
+  align-h: center;
+}
+
+.score-divider {
+  font-size: 36dp;
+  color: #6f7cb1;
+  align-h: center;
+}
+
+.meta-row {
+  spacing: 12dp;
+}
+
+.meta {
+  font-size: 14dp;
+  color: #d7defa;
+}
+
+.play-header {
+  font-size: 14dp;
+  color: #98a7d6;
+}
+
+.play-detail {
+  background: rgba(21, 28, 46, 0.88);
+  padding: 16dp;
+  corner-radius: 14dp;
+  font-size: 15dp;
+  color: #f8fbff;
+  fill-width: true;
+  wrap: true;
+}

@@ -1,0 +1,96 @@
+Panel { font-size: 14dp; color: #e8ebf5; }
+VStack { fill-width: true; }
+
+.template-page {
+  background: #0c1223;
+  spacing: 18dp;
+  padding: 24dp;
+  align-h: center;
+}
+
+.heading {
+  font-size: 24dp;
+  color: #f2f6ff;
+  align-h: center;
+}
+
+.subheading {
+  font-size: 14dp;
+  color: #9aa4c3;
+  max-width: 420dp;
+  wrap: true;
+  align-h: center;
+}
+
+.card {
+  width: 220dp;
+  background: rgba(32, 38, 58, 0.9);
+  border: 1dp rgba(90, 110, 170, 0.25);
+  fill-height: false;
+  padding: 16dp;
+  corner-radius: 14dp;
+}
+
+.card-dawn {
+  background: rgba(42, 54, 82, 0.9);
+}
+
+.card-day {
+  background: rgba(38, 54, 70, 0.9);
+}
+
+.card-night {
+  background: rgba(28, 34, 52, 0.9);
+}
+
+.card-title {
+  font-size: 18dp;
+  color: #f7f9ff;
+}
+
+.card-role {
+  font-size: 13dp;
+  color: #b1bbd9;
+  wrap: true;
+}
+
+.card-shift {
+  font-size: 12dp;
+  color: #8b94b1;
+}
+
+.card-status {
+  font-size: 12dp;
+  color: #122033;
+  background: rgba(122, 232, 255, 0.85);
+  padding: 6dp 10dp;
+  align-h: center;
+  corner-radius: 999dp;
+}
+
+.status-on {
+  background: rgba(122, 232, 255, 0.9);
+}
+
+.status-prep {
+  background: rgba(214, 168, 255, 0.9);
+}
+
+.status-standby {
+  background: rgba(255, 204, 136, 0.9);
+}
+
+.status-rest {
+  background: rgba(130, 150, 180, 0.85);
+}
+
+.card-pulse {
+  border: 2dp rgba(140, 200, 255, 0.8);
+}
+
+.lint-probe {
+  width: 0dp;
+  height: 0dp;
+  spacing: 0dp;
+  line-spacing: 0dp;
+}
