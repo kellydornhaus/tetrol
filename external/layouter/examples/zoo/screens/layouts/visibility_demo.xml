@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="visibility_demo.css" type="text/css"?>
+<VStack id="root" class="visibility-root">
+  <Panel class="title-card" text="Visibility Transitions"/>
+
+  <Panel class="intro-card">
+    <Panel class="intro-text"
+           text="Panels below toggle between visible and hidden. Size transitions shrink components toward the configured scale before hiding, then grow them back when returning."/>
+  </Panel>
+
+  <Panel class="example-card">
+    <VStack class="example-stack">
+      <Panel class="example-title" text="Slow ease (size 1.2s 40%)"/>
+      <Panel class="example-desc"
+             text="Every three seconds the card eases down to 40% before it hides, then grows back to full size."/>
+      <Panel id="slow-card" class="chip chip-slow" text="Peekaboo content *" visibility-transition="size 1200ms 40%"/>
+    </VStack>
+  </Panel>
+
+  <Panel class="example-card">
+    <VStack class="example-stack">
+      <Panel class="example-title" text="Snappy pop (size 600ms 65%)"/>
+      <Panel class="example-desc"
+             text="A shorter duration and higher minimum scale keep the card mostly visible while it pulses every few moments."/>
+      <Panel id="snappy-card" class="chip chip-snappy" text="Peekaboo content *" visibility-transition="size 600ms 65%"/>
+    </VStack>
+  </Panel>
+
+  <Panel class="example-card">
+    <VStack class="example-stack">
+      <Panel class="example-title" text="Staggered pair (size 900ms 50%)"/>
+      <Panel class="example-desc"
+             text="Two cards take turns hiding. Offsetting their timers keeps one visible while the other animates back in."/>
+      <HStack class="chip-row">
+        <Panel id="stagger-a" class="chip chip-stagger-a" text="First card *" visibility-transition="size 900ms 50%"/>
+        <Panel id="stagger-b" class="chip chip-stagger-b" text="Partner card *" visibility="hidden" visibility-transition="size 900ms 50%"/>
+      </HStack>
+    </VStack>
+  </Panel>
+</VStack>

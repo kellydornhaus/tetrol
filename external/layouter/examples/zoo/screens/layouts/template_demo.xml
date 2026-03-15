@@ -1,0 +1,38 @@
+<?xml-stylesheet href="template_demo.css" type="text/css"?>
+<VStack id="template-root"
+        width="100vw"
+        class="template-page">
+  <template id="crew-card">
+    <Panel class="card">
+      <VStack spacing="8dp">
+        <Panel id="card-title" class="card-title" text="{{Name}}"/>
+        <Panel id="card-role" class="card-role">{{Role}}</Panel>
+        <Panel id="card-shift" class="card-shift" text="{{Shift}}"/>
+        <Panel id="card-status" class="card-status" text="{{Status}}"/>
+      </VStack>
+    </Panel>
+  </template>
+
+  <Panel class="heading" text="Mission Control Roster — {{WatchName}}"/>
+  <Panel class="subheading">{{RosterSummary}}</Panel>
+
+  <FlowStack id="crew-grid"
+             spacing="16dp"
+             line-spacing="20dp"
+             justify="center"
+             fill-width="true"/>
+
+  <FlowStack class="lint-probe" visibility="collapse">
+    <Panel class="card card-dawn">
+      <Panel class="card-status status-on"/>
+    </Panel>
+    <Panel class="card card-day">
+      <Panel class="card-status status-prep"/>
+    </Panel>
+    <Panel class="card card-night">
+      <Panel class="card-status status-standby"/>
+      <Panel class="card-status status-rest"/>
+    </Panel>
+    <Panel class="card card-pulse"/>
+  </FlowStack>
+</VStack>

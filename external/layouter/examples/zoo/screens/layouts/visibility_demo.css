@@ -1,0 +1,78 @@
+.visibility-root {
+    spacing: 14dp;
+    padding: 12dp;
+    background-color: #0c0e1a;
+    fill-width: true;
+}
+
+.title-card {
+    font-size: 22dp;
+    color: #f5f5ff;
+    align-h: center;
+    padding: 10dp;
+    background-color: #23203c;
+    border-color: #2f3252;
+    border-width: 1dp;
+    fill-width: true;
+}
+
+.intro-card {
+    padding: 8dp;
+    background-color: #161a2b;
+    border-color: #262c44;
+    border-width: 1dp;
+    fill-width: true;
+}
+
+.intro-text {
+    font-size: 13dp;
+    color: #d2d6ee;
+    align-h: center;
+    wrap: true;
+}
+
+.example-card {
+    padding: 12dp;
+    background-color: #1a1f33;
+    border-color: #2b324d;
+    border-width: 1dp;
+    corner-radius: 8dp;
+    fill-width: true;
+}
+
+.example-stack {
+    spacing: 6dp;
+    fill-width: true;
+}
+
+.example-title {
+    font-size: 16dp;
+    color: #f0f2ff;
+    wrap: true;
+}
+
+.example-desc {
+    font-size: 12dp;
+    color: #bfc5ea;
+    wrap: true;
+}
+
+.chip {
+    padding: 10dp;
+    font-size: 15dp;
+    align-h: center;
+    fill-width: true;
+    corner-radius: 6dp;
+    color: #111019;
+}
+
+.chip-slow { background-color: #84b5ff; }
+.chip-snappy { background-color: #a7e8bd; }
+.chip-stagger-a { background-color: #ffcc99; }
+.chip-stagger-b { background-color: #ffaccf; }
+
+.chip-row {
+    spacing: 10dp;
+    align-v: center;
+    fill-width: true;
+}

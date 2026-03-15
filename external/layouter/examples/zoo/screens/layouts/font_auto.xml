@@ -1,0 +1,58 @@
+<?xml-stylesheet href="font_auto.css" type="text/css"?>
+<VStack id="autoRoot" width="100vw" class="auto-demo">
+  <Panel class="banner">
+    <VStack spacing="10" align-h="center" fill-width="true">
+      <Panel
+                class="demo-title"
+                
+                text="Font Autosize Showcase"
+                align-h="center"
+            />
+      <Panel
+                class="demo-subtitle"
+                
+                wrap="true"
+                align-h="center"
+            >
+        Resize the window to watch each card grow or shrink its headline to fill the available space.
+      </Panel>
+    </VStack>
+  </Panel>
+
+  <VStack spacing="12dp">
+    <Panel
+            class="section-title"
+            align-h="start"
+        >Same Text, Different Boxes</Panel>
+    <HStack class="card-row" spacing="12dp">
+      <Panel
+                class="card small"
+                
+                text="Small"
+            />
+      <Panel
+                class="card medium"
+                
+                text="Medium"
+            />
+      <Panel
+                class="card large"
+                
+                text="Large"
+            />
+    </HStack>
+  </VStack>
+
+  <VStack spacing="12dp">
+    <Panel class="section-title" align-h="start">Min / Max Clamp</Panel>
+    <HStack class="card-row" spacing="12dp">
+      <Panel
+                class="card clamp"
+                
+                wrap="true"
+            >
+        This panel is clamped between 14dp and 28dp, so it never gets too tiny or too loud.
+      </Panel>
+    </HStack>
+  </VStack>
+</VStack>

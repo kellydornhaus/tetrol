@@ -1,0 +1,48 @@
+#root {
+  fill-width: true;
+  spacing: 20dp;
+  padding: 28dp;
+}
+
+#title {
+  font-size: 24dp;
+  color: #f0f6ff;
+}
+
+#blurb,
+#note {
+  font-size: 14dp;
+  color: #9fb4c9;
+  max-width: 520dp;
+}
+
+#demo-row {
+  spacing: 12dp;
+  align-v: center;
+  min-height: 160dp;
+  background-color: #162635;
+  border-radius: 18dp;
+}
+
+.card {
+  width: 140dp;
+  padding: 14dp, 16dp, 14dp, 16dp;
+  background-color: #244057;
+  color: #e6f1ff;
+  corner-radius: 12dp;
+  align-h: center;
+  font-size: 14dp;
+  wrap: true;
+}
+
+.card.align-top {
+  align-self: start;
+}
+
+.card.align-bottom {
+  align-self: end;
+}
+
+.card.align-middle {
+  align-self: center;
+}

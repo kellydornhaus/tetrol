@@ -1,0 +1,46 @@
+/* Shared base styles for the XML demo layouts */
+
+Text {
+    font-size: 14dp;
+    color: #eeeeee;
+}
+
+VStack {
+    spacing: 8dp;
+    fill-width: true;
+}
+
+HStack {
+    spacing: 6dp;
+    fill-width: true;
+}
+
+.page {
+    spacing: 10dp;
+    fill-width: true;
+}
+
+.row.space-between {
+    justify: spaceBetween;
+}
+
+.panel {
+    padding: 8dp;
+}
+
+.para {
+    color: #dddddd;
+    max-width: 280dp;
+    wrap: true;
+}
+
+.banner {
+    color: #202840;
+    fill-width: true;
+}
+
+.title {
+    font-size: 28dp;
+    align-h: center;
+    color: #ffffff;
+}

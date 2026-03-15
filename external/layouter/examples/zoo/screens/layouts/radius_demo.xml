@@ -1,0 +1,50 @@
+<?xml-stylesheet href="radius_demo.css" type="text/css"?>
+<VStack width="100vw" class="radius-page">
+  <Panel class="radius-title" text="Rounded Corners (XML)" />
+  <Panel class="radius-description">
+    Panels and buttons now support corner radii. These samples mirror the code-driven demo using only XML and CSS attributes.
+  </Panel>
+
+  <VStack class="radius-samples">
+    <Panel class="radius-card uniform-card">
+      <VStack spacing="6">
+        <Panel class="sample-title" text="Uniform radius" />
+        <Panel class="sample-body">
+          Setting corner-radius applies the same rounding to every corner.
+        </Panel>
+      </VStack>
+    </Panel>
+
+    <Panel class="radius-card per-card">
+      <VStack spacing="6">
+        <Panel class="sample-title" text="Per-corner radii" />
+        <Panel class="sample-body">
+          Mix and match corner values to highlight specific edges.
+        </Panel>
+      </VStack>
+    </Panel>
+
+    <Panel class="radius-card bordered-card">
+      <VStack spacing="6">
+        <Panel class="sample-title" text="Rounded border" />
+        <Panel class="sample-body">
+          Borders follow the same radii when the renderer supports rounded strokes.
+        </Panel>
+      </VStack>
+    </Panel>
+
+    <Panel class="radius-card pill-card">
+      <VStack spacing="10">
+        <Panel class="sample-title" text="Pill buttons" />
+        <Panel class="sample-body">
+          Large radii produce pill shapes—great for chips, tabs, or call-to-action buttons.
+        </Panel>
+        <HStack class="button-strip">
+          <Panel class="pill-button primary" text="Primary" />
+          <Panel class="pill-button secondary" text="Secondary" />
+          <Panel class="pill-button ghost" text="Ghost" />
+        </HStack>
+      </VStack>
+    </Panel>
+  </VStack>
+</VStack>

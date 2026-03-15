@@ -1,0 +1,24 @@
+<?xml-stylesheet href="align_self.css" type="text/css"?>
+<VStack id="root" width="100vw" background="#101821">
+  <Panel id="title" class="title" align-h="center">align-self overrides</Panel>
+  <Panel id="blurb" class="blurb" wrap="true" align-h="center">
+    Individual components can override stack alignment without extra spacers or nested containers.
+  </Panel>
+  <HStack id="demo-row" justify="spaceBetween" padding="16dp">
+    <Panel class="card align-top">
+      align-self: start
+    </Panel>
+    <Panel class="card align-bottom">
+      align-self: end
+    </Panel>
+    <Panel class="card">
+      container default
+    </Panel>
+    <Panel class="card align-middle">
+      align-self via CSS
+    </Panel>
+  </HStack>
+  <Panel id="note" class="note" wrap="true" align-h="center">
+    Try toggling the classes to move each card independently along the cross axis.
+  </Panel>
+</VStack>

@@ -1,0 +1,8 @@
+.page { spacing: 12dp; fill-width: true; }
+.section { color: #1e2233; }
+.section-title { font-size: 18dp; color: #f0f0f0; }
+.gallery-subtitle { font-size: 13dp; color: #d8d8d8; align-h: center; }
+.thumb { background-color: #1d2336; border-radius: 8dp; width: 96dp; height: 96dp; padding: 6dp; }
+Panel { color: #eeeeee; }
+VStack { fill-width: true; }
+HStack { fill-width: true; }

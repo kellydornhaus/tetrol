@@ -1,0 +1,141 @@
+.positioning-root {
+  fill-width: true;
+  fill-height: true;
+}
+
+.positioning-body {
+  fill-width: true;
+  fill-height: true;
+  padding: 16;
+  background: #0c0e16;
+}
+
+.positioning-stack {
+  spacing: 12;
+  fill-width: true;
+}
+
+.card {
+  padding: 12;
+  background: #1a1e2e;
+  fill-width: true;
+  corner-radius: 8;
+}
+
+.header-card {
+  background: #1c2034;
+}
+
+.header-stack {
+  spacing: 4;
+  fill-width: true;
+}
+
+.header-title {
+  font-size: 22dp;
+  color: #f0f0ff;
+}
+
+.header-subtitle {
+  font-size: 14dp;
+  color: #d2d4e0;
+  wrap: true;
+}
+
+.card-stack {
+  spacing: 8;
+  fill-width: true;
+}
+
+.mode-badge {
+  padding: 4, 8, 4, 8;
+  background: #283054;
+  color: #c8d0ff;
+  font-size: 12dp;
+  corner-radius: 6;
+  align-h: start;
+}
+
+.card-description {
+  font-size: 13dp;
+  color: #e1e5f0;
+  wrap: true;
+}
+
+.demo-static {
+  padding: 10;
+  background: #cbe0ff;
+  color: #101020;
+  min-height: 72;
+  fill-width: true;
+  wrap: true;
+  corner-radius: 6;
+}
+
+.relative-demo,
+.absolute-demo {
+  fill-width: true;
+  min-height: 90;
+}
+
+.relative-base {
+  padding: 10;
+  background: #2f3768;
+  color: #fafdff;
+  wrap: true;
+  min-height: 90;
+  fill-width: true;
+  corner-radius: 6;
+}
+
+.relative-badge {
+  padding: 6, 10, 6, 10;
+  background: #6878dc;
+  color: #ffffff;
+  position: relative;
+  top: 18;
+  left: 24;
+  corner-radius: 6;
+}
+
+.absolute-base {
+  padding: 12;
+  background: #503036;
+  color: #fcfcff;
+  wrap: true;
+  min-height: 90;
+  fill-width: true;
+  corner-radius: 6;
+}
+
+.absolute-tag {
+  padding: 6, 10, 6, 10;
+  background: #dc7860;
+  color: #ffffff;
+  position: absolute;
+  top: 12;
+  right: 16;
+  z-index: 10;
+  corner-radius: 6;
+}
+
+.fixed-card {
+  background: #222844;
+}
+
+.fixed-description {
+  font-size: 13dp;
+  color: #dde0f5;
+  wrap: true;
+}
+
+.fixed-helper {
+  padding: 6, 12, 6, 12;
+  background: #8c60d4;
+  color: #ffffff;
+  position: fixed;
+  top: 24;
+  right: 24;
+  z-index: 20;
+  corner-radius: 8;
+}

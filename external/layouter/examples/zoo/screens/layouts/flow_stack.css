@@ -1,0 +1,56 @@
+FlowStack#root {
+  fill-width: true;
+}
+
+#root {
+  align-content: center;
+  align-items: center;
+  justify: center;
+}
+
+#title {
+  font-size: 26dp;
+  align-h: center;
+  color: #ede9ff;
+  font-autosize: false;
+}
+
+#subtitle {
+  font-size: 14dp;
+  align-h: center;
+  color: #bfb8e9;
+  max-width: 440dp;
+}
+
+#chip-cloud {
+  padding: 16dp;
+  background-color: #1c1532;
+  border-radius: 16dp;
+  align-content: center;
+  align-items: center;
+  justify: center;
+}
+
+.chip {
+  padding: 6dp, 14dp, 6dp, 14dp;
+  background-color: #2d2451;
+  color: #f4f0ff;
+  corner-radius: 999dp;
+  font-size: 13dp;
+  align-h: center;
+}
+
+.chip.accent {
+  background-color: #6658ff;
+}
+
+.chip.alt {
+  background-color: #413476;
+}
+
+#hint {
+  font-size: 12dp;
+  align-h: center;
+  color: #8b84b6;
+  max-width: 420dp;
+}
