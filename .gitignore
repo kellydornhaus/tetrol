@@ -2,3 +2,5 @@ tetrol
 tetrol.exe
 *.o
 *.a
+.DS_Store
+build/

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tetrol</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #0a0f1f;
+      overflow: hidden;
+    }
+    #loader {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #cfd8f0;
+      font-family: system-ui, sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      z-index: 10;
+    }
+    #loader.error { color: #f87171; }
+  </style>
+</head>
+<body>
+  <div id="loader">Loading Tetrol…</div>
+  <script src="version.js"></script>
+  <script src="wasm_exec.js"></script>
+  <script src="loader.js"></script>
+</body>
+</html>

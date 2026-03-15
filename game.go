@@ -3,8 +3,6 @@ package main
 import (
 	"fmt"
 	"image/color"
-	"os"
-	"path/filepath"
 	"strings"
 
 	adp "github.com/kellydornhaus/layouter/adapters/ebiten"
@@ -50,8 +48,7 @@ func NewGame() *Game {
 	scale := adp.ScaleProvider{}
 	txt := text.New(scale)
 
-	fontsDir := filepath.Join("assets", "fonts")
-	tileFontData, scoreFontData := loadGameFonts(txt, fontsDir)
+	tileFontData, scoreFontData := loadGameFonts(txt)
 	ctx := layout.NewContext(scale, rnd, txt)
 
 	dict := LoadDictionary()
@@ -73,8 +70,8 @@ func NewGame() *Game {
 	}
 }
 
-func loadGameFonts(txt *text.EtxtEngine, fontsDir string) (tileFontData, scoreFontData []byte) {
-	entries, err := os.ReadDir(fontsDir)
+func loadGameFonts(txt *text.EtxtEngine) (tileFontData, scoreFontData []byte) {
+	entries, err := gameAssets.ReadDir("assets/fonts")
 	if err != nil {
 		return nil, nil
 	}
@@ -82,7 +79,7 @@ func loadGameFonts(txt *text.EtxtEngine, fontsDir string) (tileFontData, scoreFo
 		if e.IsDir() || !strings.HasSuffix(strings.ToLower(e.Name()), ".ttf") {
 			continue
 		}
-		data, err := os.ReadFile(filepath.Join(fontsDir, e.Name()))
+		data, err := gameAssets.ReadFile("assets/fonts/" + e.Name())
 		if err != nil {
 			continue
 		}
@@ -90,7 +87,7 @@ func loadGameFonts(txt *text.EtxtEngine, fontsDir string) (tileFontData, scoreFo
 		if err != nil {
 			continue
 		}
-		name := strings.TrimSuffix(e.Name(), filepath.Ext(e.Name()))
+		name := strings.TrimSuffix(e.Name(), ".ttf")
 		txt.RegisterFont(name, font)
 
 		if name == "Montserrat-Bold" {

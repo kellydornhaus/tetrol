@@ -4,8 +4,6 @@ import (
 	"encoding/json"
 	"log"
 	"math/rand"
-	"os"
-	"path/filepath"
 	"strings"
 )
 
@@ -22,8 +20,7 @@ type Dictionary struct {
 func LoadDictionary() *Dictionary {
 	d := &Dictionary{words: make(map[string]bool)}
 
-	path := filepath.Join("assets", "dictionary.json")
-	data, err := os.ReadFile(path)
+	data, err := gameAssets.ReadFile("assets/dictionary.json")
 	if err != nil {
 		log.Printf("Warning: cannot load dictionary: %v", err)
 		return d
@@ -46,8 +43,7 @@ func LoadDictionary() *Dictionary {
 	log.Printf("Loaded %d words (%d-%d letters)", len(d.words), MinWordLen, MaxWordLen)
 
 	// Load common target words, bucketed by length
-	targetsPath := filepath.Join("assets", "targets.json")
-	tdata, err := os.ReadFile(targetsPath)
+	tdata, err := gameAssets.ReadFile("assets/targets.json")
 	if err == nil {
 		var tlist []string
 		if err := json.Unmarshal(tdata, &tlist); err == nil {
